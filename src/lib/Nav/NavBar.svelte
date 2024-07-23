@@ -1,6 +1,4 @@
 <script lang="ts">
-	import NavMenu from './NavMenu.svelte';
-
 	import type { Snippet } from 'svelte';
 
 	type Props = {
@@ -14,6 +12,5 @@
 	<div class="icon text-3xl">
 		{@render icon()}
 	</div>
-	<NavMenu></NavMenu>
 	{@render children()}
 </div>
