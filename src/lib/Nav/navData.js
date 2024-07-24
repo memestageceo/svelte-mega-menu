@@ -1,4 +1,4 @@
-export const menuItems = [
+export const navData = [
 	{
 		title: 'Products',
 		subMenu: [

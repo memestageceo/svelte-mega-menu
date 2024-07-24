@@ -1,24 +1,12 @@
 <script>
-	import { NavBar, NavCta, NavPanel, NavTitle } from '$lib/Nav';
+	import { NavBar, NavCta, NavPanel, NavTitle, navData } from '$lib/Nav';
 	import NavMenu from '$lib/Nav/NavMenu.svelte';
 
 	import '../app.css';
+	import Menu1 from './Menu1.svelte';
 
 	let { children } = $props();
 </script>
-
-<!--  
-	<Nav>
-		{@render icon()}
-		<NavPanel>
-			
-	</NavPanel>
-	
-	<NavCta>
-		<NavCtaLink></NavCtaLink>
-	</NavCta>
-</Nav>
--->
 
 <NavBar>
 	{#snippet icon()}
@@ -26,13 +14,9 @@
 	{/snippet}
 
 	<NavMenu>
-		{#each new Array(4) as _, index}
-			<NavPanel link="/" label="link-{index}" {index}>
-				{#each new Array(8) as _, i}
-					<li>hello {index}-{i}</li>
-				{/each}
-			</NavPanel>
-		{/each}
+		<Menu1 index={0} />
+		<Menu1 index={1} />
+		<Menu1 index={2} />
 	</NavMenu>
 
 	<NavCta>
