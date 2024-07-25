@@ -8,7 +8,7 @@
 	let { icon, children }: Props = $props();
 </script>
 
-<div class="flex h-[48px] w-full flex-row flex-nowrap items-baseline gap-4 shadow-md">
+<div class="flex h-[48px] w-full flex-row flex-nowrap items-baseline gap-4">
 	<div class="icon text-3xl">
 		{@render icon()}
 	</div>

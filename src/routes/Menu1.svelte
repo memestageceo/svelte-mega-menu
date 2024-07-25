@@ -64,7 +64,7 @@
 </script>
 
 <NavPanel link="/" label={menu.title} {index}>
-	<div class="grid max-w-xl grid-cols-2 gap-5">
+	<div class="flex max-w-xl flex-row flex-wrap gap-5">
 		{#each menu.subMenu as { title, items }}
 			<div class="text-slate-600">
 				<p class="font-semibold text-slate-700">{title}</p>
